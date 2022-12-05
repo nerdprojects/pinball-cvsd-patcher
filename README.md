@@ -58,7 +58,7 @@ This scripts patches ROM files. Adjusted WAV files, which were initially created
 
 ## Technical Notes
 ### EPROM Chips
-I use the Flash Chip "Microchip SST39SF040" instead of EPROMs. This allows to reprogramm quickly with my "TL866 II Plus".
+I use the Flash Chip "Microchip SST39SF040" instead of EPROMs. This allows me to burn ROMS over and over on the same chip with my "TL866 II Plus".
 However, if the ROM is 512K, the address line A18 is used, which is unfortunatley mapped diffrently on the SST39SF040 than on a M27C4001.
 
 ### WPC89 Sound Board
