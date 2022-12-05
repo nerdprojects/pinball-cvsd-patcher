@@ -1,6 +1,6 @@
 # Pinball CVSD Patcher
 
-These scripts can be used to extract and patch speech data (encoded CVSD data) used on Williams/Bally pinball machines that use the CVSD chip "Harris HC555XX".
+These scripts can be used to extract and patch speech data (encoded CVSD data) used on Williams/Bally pinball machines that use the CVSD chip "Harris HC-55516 / HC-55532 / HC-55564".
 
 ## Instructions
 ### How to Patch WPC-89 Games
