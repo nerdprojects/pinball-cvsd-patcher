@@ -52,11 +52,15 @@ This script parses the CVSD data table, used by the WPC sound board system softw
 #### wpc98-patcher.py
 This scripts patches ROM files. Adjusted WAV files, which were initially created by wpc98-extractor.py, are used as input data.
 
-
 ## TODO
-Create extractor / patcher scripts for System 11 and other machine types. So one does need to rely on the "tedious approach".
+- Create extractor / patcher scripts for System 11 and other machine types. So one does need to rely on the "tedious approach".
+- Create a SST39SF040 to M27C4001 converter.
 
 ## Technical Notes
+### EPROM Chips
+I use the Flash Chip "Microchip SST39SF040" instead of EPROMs. This allows to reprogramm quickly with my "TL866 II Plus".
+However, if the ROM is 512K, the address line A18 is used, which is unfortunatley mapped diffrently on the SST39SF040 than on a M27C4001.
+
 ### WPC89 Sound Board
 The sound board system software is stored at the end of U18 and is mapped into the 6809 memory at location 0xc000.
 U18 also contains the table with the CVSD data. The pointer to it is at 0x4015, which may end up at different offsets in the ROM file,
