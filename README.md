@@ -41,7 +41,7 @@ It can be run for example over any pinball ROM file to identify and convert spee
 This scripts converts a WAV file to CVSD data, that can be patched into a ROM file.
 
 ### cvsdchip.py
-This is the actual simulation of the CVSD chip "Harris HC55536". I more or less (copied)[https://github.com/vpinball/pinmame/blob/master/src/sound/hc55516.c] from the PinMAME project.
+This is the actual simulation of the CVSD chip "Harris HC55536". I more or less [copied](https://github.com/vpinball/pinmame/blob/master/src/sound/hc55516.c) from the PinMAME project.
 
 ### wpc89-extractor.py / wpc89-patcher.py
 These tools make patching of CVSD data easier and also more exact, but only work on WPC89 ROM sets.
@@ -79,7 +79,16 @@ depending on the ROM file size.
     | 2C00 - 2C01 | HC55536 SET
     |_____________|
     |             |
+    | 3000 - 3001 | WPC LATCH READ
+    |_____________|
+    |             |
     | 3400 - 3401 | HC55536 CLEAR
+    |_____________|
+    |             |
+    | 3800 - 3801 | WPC VOLUME
+    |_____________|
+    |             |
+    | 3C00 - 3C01 | WPC LATCH WRITE
     |_____________|
     |             |
     | 4000 - BFFF | BANKED ROM
@@ -90,5 +99,5 @@ depending on the ROM file size.
 
 
 ## Thanks
-Many thanks to the (PinMAME)[https://github.com/vpinball/pinmame] team that created the HC55536 emulation and reversed the bank switching logic, they did the hard work.
-Also thanks goes out to (Jeri Ellsworth)[https://www.youtube.com/watch?v=2FRGwuxFDE4]. I got the idea from her YouTube video, how the HC55536 encoder works.
+Many thanks to the [PinMAME](https://github.com/vpinball/pinmame) team that created the HC55536 emulation and reversed the bank switching logic, they did the hard work.
+Also thanks goes out to [Jeri Ellsworth](https://www.youtube.com/watch?v=2FRGwuxFDE4). I got the idea from her YouTube video, how the CVSD encoder can be implemented.
