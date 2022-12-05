@@ -11,7 +11,7 @@ These scripts can be used to extract and patch speech data (encoded CVSD data) u
 5. Record your new audio. Note that it has to be the same length.
 6. Save your adjusted WAV file (e.g. name it "008_u14_327682_4919_patched.wav").
 7. Patch the ROM by running "../wpc98-patcher.py 008_u14_327682_4919_patched.wav".
-8. Burn the generated "u14_patched" ROM file to the correctly sized EPROM chip.
+8. Burn the generated "u14_patched / u15_patched / u18_patched" ROM files to the correctly sized EPROM chip.
 
 ### How to Patch Other Games (currently rather tedious...)
 1. Run "cvsd-decoder.py" on a ROM file to find the audio you want to patch. You may fiddle with the sample rate to get it correct.
