@@ -54,7 +54,7 @@ This scripts patches ROM files. Adjusted WAV files, which were initially created
 
 ## TODO
 - Create extractor / patcher scripts for System 11 and other machine types. So one does need to rely on the "tedious approach".
-- Create a SST39SF040 to M27C4001 converter.
+- Extend functionality to create completely new CVSD data tables and therefore allow sounds with different lengths.
 
 ## Technical Notes
 ### EPROM Chips
