@@ -61,7 +61,8 @@ This scripts patches ROM files. Adjusted WAV files, which were initially created
 I use the Flash Chip "Microchip SST39SF040" instead of EPROMs. This allows me to burn ROMS over and over on the same chip with my "TL866 II Plus".
 However, if the ROM is 512K, the address line A18 is used, which is unfortunatley mapped diffrently on the SST39SF040 than on a M27C4001.
 
-Therefore a better alternative could be the "Winbond W27E040" chip, which is pin-compadible with the M27C4001.
+A better alternative could be the "Winbond W27E040" chip, which is pin-compatible with the M27C4001. 
+But I also made an adapter for the SST39DF040: https://github.com/nerdprojects/eprom-adapters
 
 ### WPC89 Sound Board
 The sound board system software is stored at the end of U18 and is mapped into the 6809 memory at location 0xc000.
